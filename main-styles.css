@@ -265,7 +265,7 @@ body {
 .card3__title {
   margin: 0;
   font-size: 24px;
-  color: #333;
+  color: #a30808;
   font-weight: 700;
 }
 
@@ -296,6 +296,10 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px; /* Adjust bottom spacing as needed */
 }
 
 .card__button:hover,
@@ -304,16 +308,8 @@ body {
   background-color: #45a049;
 }
 
-.container {
-  position: relative;
-}
 
-.card__button,
-.card2__button,
-.card3__button {
-  right: 50%;
-  bottom: 50px;
-}
+
 
 .footer {
   background-color: #556b2f;
