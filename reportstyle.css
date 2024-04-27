@@ -1,14 +1,30 @@
 
 body {
-  background-image: url('bgreport.jpg'), linear-gradient(45deg, #13dd78, #1088e9);
+  font-family: "Geometos", Arial, sans-serif;
+  background-color: #F9F6EE;
   margin: 0;
+  background-repeat: no-repeat;   
+  background-size: cover;
 }
+
 @font-face {
   font-family: "Geometos";
   src: url('Geometos.ttf') format('truetype');
 }
 
+#image-upload {
+  margin-bottom: 20px;
+}
 
+#image-preview-container {
+  display: none; 
+  margin-bottom: 20px;
+}
+
+#image-preview {
+  max-width: 100%; 
+  height: auto; 
+}
 
 .header-1 {
   width: 100%;
@@ -188,7 +204,7 @@ margin-right: 0;
   to { opacity: 1; }
 }
 
-/* Adjust visibility of burger menu icon based on screen size */
+
   @media (max-width: 811px) {
     .navbar-buttons {
       display: flex; /* Initially hide navbar buttons */
@@ -297,20 +313,17 @@ margin-right: 0;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background: linear-gradient(45deg, #13dd78, #1088e9); /* Gradient background */
-    backdrop-filter: blur(10px); /* 10% blur */
+    background-color: rgba(9, 141, 31, 0.9); /* Add 10% transparency */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 15%; 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 10%; 
   }
   
-  #image-upload {
-    margin-bottom: 20px;
-  }
-  
+ 
   #report {
     width: 100%;
     padding: 10px;
+    border-radius: 5px;
     margin-bottom: 20px;
     resize: none;
     overflow: hidden;
@@ -320,6 +333,7 @@ margin-right: 0;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 5px;
   }
   
   button[type="submit"] {
@@ -336,16 +350,4 @@ margin-right: 0;
     background-color: #084f22;
   }
     
-  #image-preview-container {
-    display: none;
-  
-    margin-bottom: 30px;
-  }
-  
-  #image-preview {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-  }
-  
-  
+

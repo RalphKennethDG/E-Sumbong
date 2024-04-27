@@ -12,7 +12,7 @@
 <body>
     <header class="header-1">
         <div class="headerlogo">
-            <img src="header-title.png" alt="Logo" class="logo">
+            <img src="ESUMBONG.png" alt="Logo" class="logo">
         </div>
         <nav class="navbar">
             <div class="burger-menu" id="burger-menu">
@@ -79,6 +79,27 @@
             document.querySelector(".container").classList.toggle("pushed-down"); // Toggle pushed-down class on container
         });
     </script>
+    <script>
+    function previewImage(input) {
+        var preview = document.getElementById('image-preview');
+        var file = input.files[0];
+        var reader = new FileReader();
+
+        reader.onload = function () {
+            preview.src = reader.result;
+            document.getElementById('image-preview-container').style.display = 'block';
+        };
+
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+
+    // Add an event listener to the file input field to trigger the previewImage function
+    document.getElementById('image-upload').addEventListener('change', function () {
+        previewImage(this);
+    });
+</script>
 
 </body>
 </html>
