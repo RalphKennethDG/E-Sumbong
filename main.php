@@ -15,7 +15,7 @@
 <body>
     <header class="header-1">
         <div class="headerlogo">
-            <img src="header-title.png" alt="Logo" class="logo">
+            <img src="ESUMBONG.png" alt="Logo" class="logo">
         </div>
         <nav class="navbar">
             <div class="burger-menu" id="burger-menu">
@@ -44,36 +44,34 @@
 
     <div class="container">
         <div class="card">
-            <img src="test.jpeg">
+            <img src="aboutus.jpeg">
             <div class="card__content">
-                <p class="card__title">Card Title</p>
-                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
+                <p class="card__title">About Us</p>
+                <p class="card__description">Discover the essence of our mission, values, and commitment to
+                    serving the community. Learn about our journey, team, and vision for a better tomorrow.</p>
                 <div>
                     <button class="card__button">Button 1</button>
                 </div>
             </div>
         </div>
         <div class="card2">
-            <img src="test2.jpeg">
+            <img src="report.jpeg">
             <div class="card2__content">
-                <p class="card2__title">Card Title</p>
-                <p class="card2__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
+                <p class="card2__title">REPORT</p>
+                <p class="card2__description">E-Sumbong Report: Your comprehensive overview of submitted complaints,
+                    providing insights into trends, resolution statuses, and actionable data for effective governance
+                    and community engagement.</p>
                 <div>
                     <button class="card2__button">Button 2</button>
                 </div>
             </div>
         </div>
         <div class="card3">
-            <img src="test3.jpeg">
+            <img src="faq.jpeg">
             <div class="card3__content">
-                <p class="card3__title">Card Title</p>
-                <p class="card3__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
+                <p class="card3__title">FAQ</p>
+                <p class="card3__description">Find answers to commonly asked questions about our services, policies, and
+                    more. Explore our FAQ section to get quick insights and solutions to your queries.</p>
                 <div>
                     <button class="card3__button">Button 3</button>
                 </div>
