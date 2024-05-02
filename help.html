@@ -1,29 +1,3 @@
-<?php
-include_once "connection.php";
-session_start();
-
-function getSumbongLink()
-{
-    if (
-        isset($_SESSION["admin_email"]) ||
-        isset($_SESSION["superadmin_email"])
-    ) {
-        return "admin_sumbong.php";
-    } else {
-        return "services.php";
-    }
-}
-
-function getAdminAccountsPage()
-{
-    if (isset($_SESSION["superadmin_email"])) {
-        return "admin-accounts-table_super.php";
-    } else {
-        return "admin-accounts-table.php";
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
