@@ -40,7 +40,8 @@ padding: 10px; /* Add padding to space out the navbar links */
 }
 
 .navbar button {
-  color: #0b6228;
+  color: #2b3467;
+  background-color: #cecece;
   font-weight: bold;
   width: 9em;
   height: 3em;
@@ -57,7 +58,7 @@ padding: 10px; /* Add padding to space out the navbar links */
 
 /* Add hover effect for navbar buttons */
 .navbar button:hover {
-  background-color: #0b6228; /* Change background color on hover */
+  background-color: #2b3467; /* Change background color on hover */
   color: #ffffff; /* Change text color on hover */
 }
 
@@ -66,105 +67,44 @@ margin-right: 0; /* Remove margin-right for the last button to avoid extra space
 }
 
 
-/* .loading-screen{
+.loading-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: rgb(103, 110, 151);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; 
+  z-index: 9999;
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 
 .loading-screen.hidden {
   opacity: 0;
-  pointer-events: none; /* Hide the loading screen from interactions
+  pointer-events: none;
 }
 
 @keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
 }
 
 .fade-out {
   animation: fadeOut 0.2s ease;
 }
 
-
-/* .loader {
-  width: 85px;
-  height: 85px;
+.loader {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  animation: loading-rotate 2s linear infinite;
-}
-
-.item {
-  width: 40px;
-  height: 40px;
-  display: block;
-  box-sizing: border-box;
-}
-
-.item:nth-of-type(1) {
-  background-color: #50DE68;
-  border-radius: 20px 20px 0 20px;
-  border-left: #ffffff 4px solid;
-  border-top: #f7f7f7 4px solid;
-}
-
-.item:nth-of-type(2) {
-  background-color: rgb(32, 80, 46);
-  border-radius: 20px 20px 20px 0;
-  border-right: #ffffff 4px solid;
-  border-top: #f7f7f7 4px solid;
-}
-
-.item:nth-of-type(3) {
-  background-color: rgb(0, 255, 55);
-  border-radius: 20px 0 20px 20px;
-  border-left: #ffffff 4px solid;
-  border-bottom: #f7f7f7 4px solid;
-}
-
-.item:nth-of-type(4) {
-  background-color: rgb(32, 182, 32);
-  border-radius: 0 20px 20px 20px;
-  border-right: #ffffff 4px solid;
-  border-bottom: #f7f7f7 4px solid;
-}
-
-@keyframes loading-rotate {
-  0% {
-    transform: scale(1) rotate(0);
-  }
-
-  20% {
-    transform: scale(1) rotate(72deg);
-  }
-
-  40% {
-    transform: scale(0.5) rotate(144deg);
-  }
-
-  60% {
-    transform: scale(0.5) rotate(216deg);
-  }
-
-  80% {
-    transform: scale(1) rotate(288deg);
-  }
-
-  100% {
-    transform: scale(1) rotate(360deg);
-  }
 }
 
 /* Add styles for burger menu icon */
@@ -175,10 +115,10 @@ margin-right: 0; /* Remove margin-right for the last button to avoid extra space
 }
 
 .bar {
-  display: none; /* Initially hide the burger menu icon */
+  display: none;
   width: 25px;
   height: 3px;
-  background-color: #0b6228;
+  background-color: #2b3467;
   margin: 5px 0;
   transition: 0.4s;
 }
@@ -189,14 +129,14 @@ margin-right: 0; /* Remove margin-right for the last button to avoid extra space
 }
 
 /* Adjust visibility of burger menu icon based on screen size */
-  @media (max-width: 811px) {
+  @media (max-width: 838px) {
     .navbar-buttons {
       display: flex; /* Initially hide navbar buttons */
       flex-direction: column; /* Arrange buttons in a column */
       z-index: 999; /* Ensure it's above everything else */
       position: absolute; /* Position it absolutely */
-      top: 250%; /* Center vertically */
-      left: 50%; /* Center horizontally */
+      top: 400%; /* Center vertically */
+      left: 51.5%; /* Center horizontally */
       transform: translate(-50%, -50%); /* Center the container */
       padding: 10px; /* Add some padding */
       opacity: 0; /* Initially hide with opacity */
@@ -243,7 +183,7 @@ margin-right: 0; /* Remove margin-right for the last button to avoid extra space
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #0b6228;
+  background-color: #2b3467;
   margin: 5px 0;
   transition: transform 0.3s ease; /* Add transition effect */
 }
@@ -555,4 +495,112 @@ font-size: 32px;
   }
 
  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .dropdown-toggle:hover {
+  background-color: #2b3467 !important;
+  color: #ffffff !important;
+}
+
+.navbar .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  z-index: 1000;
+  min-width: 135px;
+  padding: 8px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  background-color: #cecece !important;
+  border: 1px solid #dee2e6 !important;
+  border-radius: 5px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  clear: both;
+  font-weight: normal;
+  color: #2b3467;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #2b3467;
+  color: #ffffff;
+}
+.navbar .dropdown-menu.show {
+  display: block;
+}
+
+.navbar .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  clear: both;
+  font-weight: normal;
+  color: #2b3467 !important;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent !important;
+  border: 0 !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background-color: #2b3467 !important;
+  color: #ffffff !important;
+}
+
+.earth {
+  display: flex;
+  justify-content: center;
+  height: 25vw;
+  width: 25vw;
+  margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.globe-holder{
+    position: absolute;
+      height: 37%;
+      width: 37%;
+    top: 22.3%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.globe {
+    position: absolute;
+  height: 132%;
+  width: 144%;
+  top: -16%;
+    left: -21%;
+}
+
+svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -9.5%;
 }
