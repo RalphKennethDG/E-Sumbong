@@ -14,7 +14,7 @@
     <nav>
         <div class="logo-name">
             <div class="logo-image">
-               <img src="image/userphoto.jpeg" alt="">
+               <img src="dashboard-assets/userphoto.jpeg" alt="">
             </div>
             <span class="logo_name"><a href="#">@Username</a></span>
         </div>
