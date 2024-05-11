@@ -205,7 +205,11 @@ margin-right: 0;
   to { opacity: 1; }
 }
 
+h2{
+color: #F9F6EE;
 
+
+}
   @media (max-width: 811px) {
     .navbar-buttons {
       display: flex; /* Initially hide navbar buttons */

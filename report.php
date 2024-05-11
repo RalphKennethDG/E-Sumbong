@@ -39,8 +39,10 @@
         </div>
     </div>
 
-    <div class="container">
+
+    <div>
         <form id="report-form" data-report-type="">
+            <h2>Report</h2>
             <input type="file" accept="image/*" capture="camera" name="image" id="image-upload">
             <div id="image-preview-container">
                 <img id="image-preview" src="#" alt="Image Preview">
@@ -85,10 +87,10 @@
         });
     </script>
     <script>
-    function previewImage(input) {
-        var preview = document.getElementById('image-preview');
-        var file = input.files[0];
-        var reader = new FileReader();
+        function previewImage(input) {
+            var preview = document.getElementById('image-preview');
+            var file = input.files[0];
+            var reader = new FileReader();
 
         reader.onload = function () {
             preview.src = reader.result;
@@ -100,16 +102,22 @@
         }
     }
 
-    if (report === '') {
-                document.getElementById('report-error').innerText = 'Please enter your report.';
-                return false;
-            } else {
-                document.getElementById('report-error').innerText = '';
-            }
-
+    // Event listener for file input change
     document.getElementById('image-upload').addEventListener('change', function () {
         previewImage(this);
     });
+
+    // Validate report input
+    document.getElementById("report-form").addEventListener("submit", function (event) {
+        var report = document.getElementById("report").value;
+        if (report.trim() === '') {
+            document.getElementById('report-error').innerText = 'Please enter your report.';
+            event.preventDefault(); // Prevent form submission
+        } else {
+            document.getElementById('report-error').innerText = '';
+        }
+    });
+
 </script>
 
 </body>
