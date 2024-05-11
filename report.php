@@ -49,15 +49,20 @@
                 <textarea name="report" id="report" rows="5" placeholder="Enter your detailed report"></textarea>
             </div>
             <select name="company" id="company">
-                <option value="company1">DENR</option>
-                <option value="company2">OWO</option>
-                <option value="company3">QWQ</option>
+                <option value="company1">DEPARTMENT OF ENVIRONMENT AND NATURAL RESOURCES</option>
+                <option value="company2">DEPARTMENT OF THE INTERIOR AND LOCAL GOVERNMENT</option>
+                <option value="company3">ENVIRONMENTAL MANAGEMENT BUREAU</option>
+                <option value="company4">DEPARTMENT OF PUBLIC WORKS AND HIGHWAYS</option>
             </select>
             <button type="submit">Submit</button>
         </form>
     </div>
 
-    <footer>
+    <footer class="footer">
+        <div class="footer__content">
+            <h1 class="footer__heading-primary">Empower Voices, Ensure Justice</h1>
+            <h2 class="footer__heading-secondary">E-Sumbong, Your Platform for Accountability</h2>
+        </div>
     </footer>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -95,7 +100,13 @@
         }
     }
 
-    // Add an event listener to the file input field to trigger the previewImage function
+    if (report === '') {
+                document.getElementById('report-error').innerText = 'Please enter your report.';
+                return false;
+            } else {
+                document.getElementById('report-error').innerText = '';
+            }
+
     document.getElementById('image-upload').addEventListener('change', function () {
         previewImage(this);
     });

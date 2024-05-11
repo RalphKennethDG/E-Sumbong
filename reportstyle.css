@@ -5,6 +5,7 @@ body {
   margin: 0;
   background-repeat: no-repeat;   
   background-size: cover;
+  
 }
 
 @font-face {
@@ -82,7 +83,7 @@ margin-right: 0;
 }
 
 
-/* .loading-screen{
+ .loading-screen{
   position: fixed;
   top: 0;
   left: 0;
@@ -99,7 +100,7 @@ margin-right: 0;
 
 .loading-screen.hidden {
   opacity: 0;
-  pointer-events: none; /* Hide the loading screen from interactions
+  pointer-events: none;
 }
 
 @keyframes fadeOut {
@@ -112,7 +113,7 @@ margin-right: 0;
 }
 
 
-/* .loader {
+ .loader {
   width: 85px;
   height: 85px;
   display: flex;
@@ -313,10 +314,10 @@ margin-right: 0;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(9, 141, 31, 0.9); /* Add 10% transparency */
+    background-color: rgba(85, 127, 47, 0.9); /* Add 10% transparency */
     border-radius: 10px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    margin-top: 10%; 
+    margin-top: 12%; 
   }
   
  
@@ -349,5 +350,45 @@ margin-right: 0;
   button[type="submit"]:hover {
     background-color: #084f22;
   }
-    
 
+  .footer {
+    background-color: #556b2f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Fixed positioning */
+    bottom: 0; /* Position at the bottom of the viewport */
+    left: 0; /* Align to the left */
+    z-index: 9999; /* Ensure it's above other content */
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__heading-primary {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.footer__heading-secondary {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__heading-primary {
+      font-size: 20px;
+  }
+
+  .footer__heading-secondary {
+      font-size: 16px;
+  }
+}
+
+  
