@@ -257,7 +257,7 @@ margin-right: 0; /* Remove margin-right for the last button to avoid extra space
   }
 
 .header-title {
-    font-family: 'Montserrat';  
+    font-family: Poppins, sans-serif;  
     color: #2b3467;
     align-self: center;
     margin-top: 45px;
@@ -280,7 +280,7 @@ margin-right: 0; /* Remove margin-right for the last button to avoid extra space
     align-self: center;
     margin-top: 30px;
     max-width: 1047px;
-    font: Montserrat, sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 400;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add text shadow */
 
@@ -313,7 +313,7 @@ margin-right: 0; /* Remove margin-right for the last button to avoid extra space
 }
 
 .card-text {
-    font: Montserrat, sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 400;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add text shadow */
 
@@ -394,7 +394,7 @@ margin-right: 0; /* Remove margin-right for the last button to avoid extra space
 
   .card-2-text p {
 margin-top: 15px;
-font: Montserrat, sans-serif;
+font-family: Poppins, sans-serif;
 font-weight: 400;
 text-align: justify;
 margin-left: 23px;
@@ -457,7 +457,7 @@ margin-right: 24px;
 }
 
   .snip1512 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Poppins, sans-serif;
     position: relative;
     overflow: hidden;
     min-width: 230px;
