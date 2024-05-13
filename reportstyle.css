@@ -1,10 +1,12 @@
 
 body {
   font-family: "Geometos", Arial, sans-serif;
-  background-color: #F9F6EE;
-  margin: 0;
+background-image:url('report-bg.png');
+margin: 0;
   background-repeat: no-repeat;   
-  background-size: cover;
+  background-size:cover;
+  overflow: hidden;
+  background-attachment: fixed;
 }
 
 @font-face {
@@ -205,8 +207,7 @@ margin-right: 0;
 }
 
 h2{
-color: #F9F6EE;
-font: Montserrat, sans-serif;
+color: #2b3467;
 
 
 }
@@ -318,7 +319,7 @@ font: Montserrat, sans-serif;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #2b3467; /* Add 10% transparency */
+    background-color: white; /* Add 10% transparency */
     border-radius: 20px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
     margin-top: 104px; 
@@ -326,13 +327,13 @@ font: Montserrat, sans-serif;
   }
   
   h2 {
-    font-weight: 800;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
   }
 
   p {
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #2b3467;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 font-weight: 600;
 margin-top: -10px;
   }
@@ -358,11 +359,12 @@ margin-top: -10px;
     background-color: #eb455f;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 25px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 15px;
     font-size: 16px;
+    width: 100%;
   }
   
   button[type="submit"]:hover {
@@ -467,8 +469,7 @@ margin-top: -10px;
 
 @media screen and (max-width: 768px) {
   #report-form {
-      margin-top: 165px; /* Adjust margin for smaller screens */
-  }
+      margin-top: 80px; /* Adjust margin for smaller screens */
+    }
 }
 
-  
